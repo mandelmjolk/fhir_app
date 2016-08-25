@@ -1,0 +1,9 @@
+<h1>Fhir App</h1>
+<hr>
+<% @posts.each do |post| %>
+  <p>First Name: <%= post[:name] %></p>
+  <p>Last name: <%= post[:last] %></p>
+  <p>Gender: <%= post[:gender] %></p>
+  <p>Photo: <img src="data:image/gif;base64,<%= post[:photo] %>"></p>
+  <p>Organization: <%= post[:organization]%></p>
+<% end %>
